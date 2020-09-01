@@ -1,8 +1,8 @@
 ﻿#################################################CHECKLIST COM#################################################
             #Specify the path of the excel file
-            $FilePath = "F:\checklist\gold_files\gold.xlsx"
+            $FilePath = "F:\■■■■■■■■\■■■■■■■■\baseFileToReadFrom.xlsx"
             #Specify the Sheet name
-            $SheetName = "gold" 
+            $SheetName = "■■■■■■■■" 
             <#
             Function checks for base file and appends a number to it
             example: 11-xxxx_CheckList1
@@ -36,7 +36,7 @@
             }
 
             $final = Get-NewFileName -FilePath "F:\checklist\DB" -FileName "gold" -FileExt "xlsx"
-            Copy-Item -Path "F:\checklist\gold_files\gold.xlsx" -Destination '$final'
+            Copy-Item -Path "F:\■■■■■■■■\.xlsx" -Destination '$final'
 
             #Write-Host $final
             # Create an Object Excel.Application using Com interface
