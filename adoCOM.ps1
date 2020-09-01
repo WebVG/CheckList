@@ -1,1 +1,0 @@
-﻿private const string connectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\\Book1.xls;Extended Properties=\"Excel 8.0;HDR=YES;\"";
