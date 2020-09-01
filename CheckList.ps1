@@ -20,18 +20,18 @@ $form.Icon = $Icon
 #>
 #region  ############################BACKGROUND TASKS###########################
 <#Use the robocopy generator to store packages into the IT folder#>
-$itFolder = "C:\IT"
+$itFolder = "■■■■■■■■"
 If(!(test-path $itFolder))
 {
 New-Item -ItemType directory -Path C:\IT
-robocopy F:\checklist\custom_packages\cCleaner C:\IT\cCleaner /e /MIR /R:0 /W:0 /NP /FFT /log:"C:\IT\cCleaner_LOG.txt" /NDL
+robocopy F:\■■■■■■■■\■■■■■■■■ C:\■■■■■■■■\■■■■■■■■ /e /MIR /R:0 /W:0 /NP /FFT /log:"C:\■■■■■■■■\cCleaner_LOG.txt" /NDL
 
 }
 Install-Module -Name PSWindowsUpdate
-#$runtimes = "C:\Users\cereal\Desktop\powershell\checklist\runtime\install_all.bat"
+#$runtimes = "C:\■■■■■■■■\■■■■■■■■\powershell\checklist\runtime\install_all.bat"
 #start $runtimes
 #silent install of alt Chrome that goes to all profiles on PC
-#$chrome = "C:\Users\cereal\Desktop\powershell\checklist\ninite\chromesetup.exe"
+#$chrome = "C:\■■■■■■■■\■■■■■■■■\powershell\checklist\ninite\chromesetup.exe"
 #start $chrome /silent /install
 ####Chocolatey is a package management framework (i.e. it installs adobe flash without the verbose code)
 #$chocolate = Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
@@ -54,7 +54,7 @@ choco install classic-shell
 #endregion 
 #region ############################FORM CONTENTS############################
 #################################################FORM CONTENTS#################################################
-$Form.Text = "EMC IT Solutions Computer Preperation Checklist Application"
+$Form.Text = "■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■"
 #################################################SYSINFO_GROUPBOX CONFIG#######################################
 $SYSINFO_GROUPBOX = New-Object System.Windows.Forms.GroupBox
 $SYSINFO_GROUPBOX.Location = New-Object System.Drawing.Point(27.5, 32)
@@ -99,21 +99,20 @@ $serialBox.Text = $serial
 $serialBox.Location = New-Object System.Drawing.Point(575, 55)
 $serialBox.Size = New-Object System.Drawing.Size(100, 55)
 $SYSINFO_GROUPBOX.Controls.Add($serialBox)
-############RMM Label#############
+############UID Label#############
 #$label03 = New-object System.Windows.Forms.Label
-#$label03.Text = "RMM:"
+#$label03.Text = "■■■■■■■■:"
 #$label03.Location = New-Object System.Drawing.Point(470, 55)
 #$label03.size = New-Object System.Drawing.Size(100, 55)
 #$SYSINFO_GROUPBOX.Controls.Add($label03)
-#############RMM TextBox###########
+#############UID TextBox###########
 #$textBox03 = New-Object System.Windows.Forms.TextBox
 #$textBox03.Location = New-Object System.Drawing.Point(550,55)
 #$textBox03.Size = New-Object System.Drawing.Size(100, 55)
-#$fileRMM = "C:\Users\cereal\Desktop\powershell\checklist\rmm.csv"
-#$fileSEP = "C:\Users\cereal\Desktop\powershell\checklist\SEP.csv"
+#$fileRMM = "C:\■■■■■■■■\■■■■■■■■\powershell\checklist\rmm.csv"
+#$fileSEP = "C:\■■■■■■■■\■■■■■■■■\powershell\checklist\SEP.csv"
 #$SYSINFO_GROUPBOX.Controls.Add($textBox03) 
 ###READING FROM CSV FILE OF LIST OF CLIENTS TO CHECK FOR WHICH AV IT GETS
-###MAYBE CHECK TO SEE IF THE PROGRAM IS JUST INSTALLED
 ############Case Number Label#############
 $caseNLabel = New-object System.Windows.Forms.Label
 $caseNLabel.Text = "Case Number:"
@@ -180,7 +179,7 @@ $SYSINFO_GROUPBOX.Controls.Add($timeBox)
 $form.Controls.Add($SYSINFO_GROUPBOX) #<-- loads the GroupBox holding the above items to the form, must load after all items in groupbox
 #################################################SYSINFO_GROUPBOX END##################################################
 #################################################ADMIN_GROUPBOX CONFIG#################################################
-#THIS SECTION CONTAINS INTERACTIVE PROCESSES THAT CANNOT BE JUST RUN#
+#THIS SECTION CONTAINS INTERACTIVE PROCESSES THAT CANNOT JUST RUN#
 $ADMIN_GROUPBOX = New-Object System.Windows.Forms.GroupBox
 $ADMIN_GROUPBOX.Location = New-Object System.Drawing.Point(27.5, 370)
 $ADMIN_GROUPBOX.Size = New-Object System.Drawing.Size(900, 200)
@@ -255,7 +254,7 @@ $winUpdateButton.Size = New-Object System.Drawing.Size(100, 55)
 $winUpdateButton.Text = "Update"
 $winUpdateButton.Add_Click(
         {
-           Powershell "C:\Users\cereal\Desktop\powershell\checklist\update-Windows.ps1"
+           Powershell "C:\■■■■■■■■\■■■■■■■■\powershell\checklist\update-Windows.ps1"
         }
 )
 $form.Controls.Add($winUpdateButton)
