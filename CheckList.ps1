@@ -11,7 +11,7 @@ $form.Size = $size
 $form.StartPosition = 'CenterScreen'
 $Font = New-Object System.Drawing.Font("Verdana Pro", 9)
 $Form.Font = $Font
-$Icon = New-Object System.Drawing.Icon ("C:\Users\cereal\Desktop\powershell\checklist\resources\comp.ico")
+$Icon = New-Object System.Drawing.Icon ("comp.ico")
 $form.Icon = $Icon
 #endregion
 ############################################    PRECONFIGURATION   ############################################
